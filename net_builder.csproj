@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Authors>Muhammad Chaqiqi Mudafi (mcmudafi@gmail.com)</Authors>
+        <Company></Company>
+        <Version>1.0.0</Version>
+        <Title>.NET Core project builder</Title>
+        <PackageId>net_builder</PackageId>
+        <Product>net_builder</Product>
+        <Description>A simple application to help create publication packages for .NET Core projects.    </Description>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/mcmudafi/net_builder</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageProjectUrl>https://github.com/mcmudafi/net_builder</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Build" Version="17.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="images" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+
+</Project>
